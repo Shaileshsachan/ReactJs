@@ -1,16 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Modal from "./Modal";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <div
-      className="ui raised very padded text container segment"
-      style={{ marginTop: "80px" }}
-    >
-      <h3 className="ui header">Contact</h3>
-      <p>
-        Lorem ipsum dolor sit amet, cosectetur elit, Lorem ipsum dolor sit amet,
-        cosectetur elit, Lorem ipsum dolor sit amet, cosectetur elit
-      </p>
+    <div>
+      <Modal />
+      <div
+        className="ui raised very padded text container segment"
+        style={{ marginTop: "80px" }}
+      >
+        <Link to="/shailesh" className="ui header">
+          Shailesh
+        </Link>
+        <p>
+          Lorem ipsum dolor sit amet, cosectetur elit, Lorem ipsum dolor sit
+          amet, cosectetur elit, Lorem ipsum dolor sit amet, cosectetur elit
+        </p>
+      </div>
+      <div
+        className="ui raised very padded text container segment"
+        style={{ marginTop: "80px" }}
+      >
+        <Link to="/yogesh" className="ui header">
+          yogesh
+        </Link>
+        <p>
+          Lorem ipsum dolor sit amet, cosectetur elit, Lorem ipsum dolor sit
+          amet, cosectetur elit, Lorem ipsum dolor sit amet, cosectetur elit
+        </p>
+      </div>
     </div>
   );
 };
