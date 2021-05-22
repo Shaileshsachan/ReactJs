@@ -30,4 +30,12 @@ const mapStateToProps = (state, ownProps) => {
     card: state.cards.find((card) => card.title === title),
   };
 };
+
+const mapDispatchtoProps = (dispatch) => {
+  return {
+    deleteCard: (id) => {
+      dispatch({ type: "DELETE_CARD", id });
+    },
+  };
+};
 export default connect(mapStateToProps)(Card);
